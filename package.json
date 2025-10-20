@@ -3,7 +3,11 @@
   "displayName": "Task Bus",
   "description": "Status bar combo box and play button to select and run tasks from tasks.json.",
   "version": "0.0.1",
-  "publisher": "your-name",
+  "publisher": "obhi-d",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obhi-d/task-bus.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
