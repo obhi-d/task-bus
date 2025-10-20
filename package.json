@@ -1,0 +1,76 @@
+{
+  "name": "task-bus",
+  "displayName": "Task Bus",
+  "description": "Status bar combo box and play button to select and run tasks from tasks.json.",
+  "version": "0.0.1",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:task-bus.selectTask",
+    "onCommand:task-bus.executeTask",
+    "onCommand:task-bus.selectLaunch",
+    "onCommand:task-bus.executeLaunch"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "task-bus.selectTask",
+        "title": "Task Bus: Select Task",
+        "category": "Task Bus"
+      },
+      {
+        "command": "task-bus.executeTask",
+        "title": "Task Bus: Run Task",
+        "category": "Task Bus"
+      },
+      {
+        "command": "task-bus.selectLaunch",
+        "title": "Task Bus: Select Launch Configuration",
+        "category": "Task Bus"
+      },
+      {
+        "command": "task-bus.executeLaunch",
+        "title": "Task Bus: Run Launch Configuration",
+        "category": "Task Bus"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Task Bus",
+      "properties": {
+        "task-bus.showTaskBus": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the Task Bus status bar controls."
+        },
+        "task-bus.showLaunchBus": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the Launch Bus status bar controls."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "test": "echo \"No tests yet\""
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0"
+  }
+}

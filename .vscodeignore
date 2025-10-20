@@ -1,0 +1,7 @@
+.eslintrc.json
+node_modules/**
+src/**
+.vscode/**
+**/*.ts
+tsconfig.json
+package-lock.json

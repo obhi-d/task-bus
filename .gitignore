@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+*.tgz
+*.vsix
+coverage/
+node_modules/
+out/
+.vscode-test/
+.vscode/*
+!.vscode/extensions.json
