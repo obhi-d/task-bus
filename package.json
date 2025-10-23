@@ -2,7 +2,7 @@
   "name": "task-bus",
   "displayName": "Task Bus",
   "description": "Status bar combo box and play button to select and run tasks from tasks.json.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "obhi-d",
   "repository": {
     "type": "git",

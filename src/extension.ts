@@ -171,13 +171,13 @@ function updateTaskStatusBar(): void {
 		taskSelectorItem.text = `$(list-selection) ${selectedTask.name}`;
 		taskSelectorItem.tooltip = `Selected task: ${selectedTask.name}\nClick to choose a different task`;
 		taskRunnerItem.tooltip = `Run ${selectedTask.name}`;
-		taskRunnerItem.text = '$(play)';
+		taskRunnerItem.text = '$(tools)';
 		taskRunnerItem.command = 'task-bus.executeTask';
 	} else {
 		taskSelectorItem.text = '$(list-selection) Select Task';
 		taskSelectorItem.tooltip = 'No task selected. Click to choose one.';
 		taskRunnerItem.tooltip = 'Select a task to run.';
-		taskRunnerItem.text = '$(play)'; // Keep icon consistent so item does not jump.
+		taskRunnerItem.text = '$(tools)'; // Keep icon consistent so item does not jump.
 	}
 }
 
